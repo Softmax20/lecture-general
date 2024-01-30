@@ -54,20 +54,17 @@ subtitle: ""
 -   Accural/FU time 고려 가능
 -   RENOVATE-COMPLEX-PCI
 
-
 ## **샘플수방법 = 논문분석방법**
 
 샘플수를 difference로 계산했다면, 실제분석도 difference로 (No HR)
 
-- **RACING**: Proportion(rate 아님) difference + HR
-- **LOADSTAR** : rate differecnce만, No HR
-- **FLAVOUR**: Difference(Table), HR(본문, supplement) 같이 제시
+-   **RACING**: Proportion(rate 아님) difference + HR
+-   **LOADSTAR** : rate differecnce만, No HR
+-   **FLAVOUR**: Difference(Table), HR(본문, supplement) 같이 제시
 
+샘플수를 HR로 계산했다면, 실제분석도 HR로
 
-샘플수를 HR로 계산했다면, 실제분석도 HR로 
-
-- **RENOVATE-COMPLEX-PCI**: HR
-
+-   **RENOVATE-COMPLEX-PCI**: HR
 
 ## Racing
 
@@ -97,12 +94,9 @@ subtitle: ""
 :::
 :::
 
-
 ## LOADSTAR
 
 ![](img/tb_loadstar.png)
-
-
 
 ## FLAVOUR
 
@@ -135,7 +129,6 @@ subtitle: ""
 ## RENOVATE-COMPLEX-PCI
 
 ![](img/res_renovate.png)
-
 
 ## Use `gsdesign` packages
 
@@ -340,7 +333,6 @@ jskm(fit2, mark = F, surv.scale = "percent", table = T, status.cmprsk = "1")
 fit3 <- survfit(Surv(time, status) ~ sex, data = colon)
 jskm(fit3, mark = F, surv.scale = "percent", table = T, pval = T, pval.coord = c(350, 0.5), cut.landmark = 730, cumhaz = T)
 ```
-
 
 ## RENOVATE-COMPLEX-PCI 리비전
 
